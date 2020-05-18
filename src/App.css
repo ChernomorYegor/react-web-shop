@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+.product-list, .cart, .cart-prod-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 23% !important;
+  margin: 5px;
+}
