@@ -91,8 +91,8 @@ function userReducer(state = initialState, action) {
             return update(state, {
                 $merge:
                     {
-                        userLoginError: '',
-                        userPasswordError: '',
+                        userLoginError: initialState.userLoginError,
+                        userPasswordError: initialState.userPasswordError,
                         authenticated: false,
                     }
             });

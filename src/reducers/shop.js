@@ -75,9 +75,9 @@ function shopReducer(state = initialState, action) {
                 },
                 $merge:
                     {
-                        cartItems: [],
-                        userFullName: '',
-                        userAddress: '',
+                        cartItems: initialState.cartItems,
+                        userFullName: initialState.userFullName,
+                        userAddress: initialState.userAddress,
                         isOrderAccepted: true,
                     }
             });
